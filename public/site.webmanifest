@@ -1,0 +1,20 @@
+{
+  "name": "VALO Tech",
+  "short_name": "VALO",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#2D2D73",
+  "background_color": "#F7F9FC",
+  "display": "standalone",
+  "start_url": "/"
+}
