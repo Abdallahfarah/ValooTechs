@@ -95,7 +95,7 @@ export default function Stats() {
     },
     {
       icon: Calendar,
-      value: 2,
+      value: 1,
       suffix: '+',
       label: 'Years Experience',
       isGreenTheme: false,
