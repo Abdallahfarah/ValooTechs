@@ -562,7 +562,7 @@ export default function Hero() {
             {/* Paragraph */}
             <motion.p
               variants={itemVariants}
-              className="text-base sm:text-lg text-primary/70 leading-relaxed max-w-[650px] mb-10"
+              className="text-base sm:text-lg text-secondary leading-relaxed max-w-[650px] mb-10"
             >
               I help businesses and brands grow with modern web applications, stunning designs, and powerful digital strategies.
             </motion.p>
