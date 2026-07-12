@@ -68,8 +68,8 @@ export default function Contact() {
 
                 <div className="space-y-5">
                   {[
-                    { icon: Mail, title: 'Email Us', value: 'hello@valo.tech', href: 'mailto:hello@valo.tech' },
-                    { icon: Phone, title: 'Call Us', value: '+251 912 345 678', href: 'tel:+251912345678' },
+                    { icon: Mail, title: 'Email Us', value: 'Valodev14@gmail.com', href: 'mailto:Valodev14@gmail.com' },
+                    { icon: Phone, title: 'Call Us', value: '+251 915 783 928', href: 'tel:+251915783928' },
                     { icon: MapPin, title: 'Visit Us', value: 'Jijiga, Somali Region, Ethiopia', href: '#' },
                   ].map((item, idx) => {
                     const Icon = item.icon;
