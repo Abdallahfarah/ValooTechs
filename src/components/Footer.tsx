@@ -20,7 +20,7 @@ export default function Footer() {
                 className="h-6 sm:h-7 md:h-8 w-auto object-contain select-none pointer-events-none transform group-hover:scale-105 transition-transform duration-300"
               />
             </a>
-            
+
             <p className="text-sm text-primary/60 leading-relaxed max-w-sm">
               Building digital products, brands, and experiences that drive real business results.
             </p>
@@ -96,8 +96,8 @@ export default function Footer() {
             <ul className="space-y-3.5">
               {[
                 { icon: MapPin, text: 'Jijiga, Somali Region, Ethiopia' },
-                { icon: Mail, text: 'hello@valo.tech' },
-                { icon: Phone, text: '+251 912 345 678' },
+                { icon: Mail, text: 'Valodev14@gmail.com' },
+                { icon: Phone, text: '+251 915 783 928' },
               ].map((info, index) => {
                 const Icon = info.icon;
                 return (
