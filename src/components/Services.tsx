@@ -7,14 +7,11 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 // Reusable Tilt Card Component (Capped strictly at 3° tilt and -10px lift)
-function ServiceCard({ icon: Icon, number, title, description, linkText, linkHref, accentClass, iconBgClass }: {
+function ServiceCard({ icon: Icon, number, title, description, iconBgClass }: {
   icon: any,
   number: string,
   title: string,
   description: string,
-  linkText: string,
-  linkHref: string,
-  accentClass: string,
   iconBgClass: string
 }) {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -66,7 +63,7 @@ function ServiceCard({ icon: Icon, number, title, description, linkText, linkHre
         transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(${isHovered ? -10 : 0}px) scale3d(${isHovered ? 1.02 : 1}, ${isHovered ? 1.02 : 1}, 1)`,
         transition: isHovered ? 'none' : 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
       }}
-      className="glass-panel relative rounded-3xl p-8 flex flex-col justify-between h-[360px] cursor-pointer group overflow-hidden transition-all duration-500 shadow-glass hover:shadow-glass-lg hover:border-white/80"
+      className="glass-panel relative rounded-3xl p-8 flex flex-col justify-between h-[320px] cursor-pointer group overflow-hidden transition-all duration-500 shadow-glass hover:shadow-glass-lg hover:border-white/80"
     >
       {/* 3D Glass Shine Layer */}
       <div
@@ -86,26 +83,13 @@ function ServiceCard({ icon: Icon, number, title, description, linkText, linkHre
       </div>
 
       {/* Content */}
-      <div className="mt-8 flex-1 flex flex-col justify-between" style={{ transform: 'translateZ(35px)' }}>
-        <div>
-          <h3 className="text-xl font-bold text-primary mb-3 transition-colors duration-300 group-hover:text-primary-dark">
-            {title}
-          </h3>
-          <p className="text-sm text-primary/60 leading-relaxed">
-            {description}
-          </p>
-        </div>
-
-        {/* Link Button */}
-        <a
-          href={linkHref}
-          className={`inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase mt-4 transition-transform duration-300 group-hover:translate-x-1.5 ${accentClass}`}
-        >
-          <span>{linkText}</span>
-          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-          </svg>
-        </a>
+      <div className="mt-8 flex-1 flex flex-col" style={{ transform: 'translateZ(35px)' }}>
+        <h3 className="text-xl font-bold text-primary mb-3 transition-colors duration-300 group-hover:text-primary-dark">
+          {title}
+        </h3>
+        <p className="text-sm text-primary/60 leading-relaxed">
+          {description}
+        </p>
       </div>
     </div>
   );
@@ -117,30 +101,21 @@ export default function Services() {
       icon: Code,
       number: '01',
       title: 'Software Development',
-      description: 'I build fast, secure, and scalable web applications using modern technologies that deliver real results.',
-      linkText: 'Learn More',
-      linkHref: '#project',
-      accentClass: 'text-primary hover:text-primary-dark',
+      description: 'We build fast, secure, and scalable web applications using modern technologies that deliver real results.',
       iconBgClass: 'bg-primary/5 border-primary/25 text-primary shadow-sm shadow-primary/5',
     },
     {
       icon: Video,
       number: '02',
       title: 'Branding & Video Production',
-      description: 'I create powerful brand identities and cinematic videos that tell your story and connect with your audience.',
-      linkText: 'Learn More',
-      linkHref: '#contact',
-      accentClass: 'text-secondary hover:text-secondary-dark',
+      description: 'We create powerful brand identities and cinematic videos that tell your story and connect with your audience.',
       iconBgClass: 'bg-secondary/5 border-secondary/25 text-secondary shadow-sm shadow-secondary/5',
     },
     {
       icon: Megaphone,
       number: '03',
       title: 'Digital Marketing',
-      description: 'I help you grow your brand online with smart strategies, content creation, and ads that generate traffic and sales.',
-      linkText: 'Learn More',
-      linkHref: '#contact',
-      accentClass: 'text-primary hover:text-primary-dark',
+      description: 'We help you grow your brand online with smart strategies, content creation, and ads that generate traffic and sales.',
       iconBgClass: 'bg-purple-500/5 border-purple-500/25 text-purple-600 shadow-sm shadow-purple-500/5',
     },
   ];

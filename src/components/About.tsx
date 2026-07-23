@@ -59,7 +59,7 @@ export default function About() {
                 <h3 className="text-lg font-bold text-primary">Our Mission</h3>
               </div>
               <p className="text-sm text-primary/70 leading-relaxed">
-                To empower modern enterprises with high-fidelity 3D interactive interfaces, scalable cloud infrastructure, and robust POS systems that simplify operations and spark sustainable growth.
+                At VALO Tech, our mission is to empower businesses with innovative software, modern digital solutions, and dependable technology that simplify operations, enhance customer experiences, and drive sustainable growth.
               </p>
             </motion.div>
 
@@ -75,7 +75,7 @@ export default function About() {
                 <h3 className="text-lg font-bold text-primary">Our Vision</h3>
               </div>
               <p className="text-sm text-primary/70 leading-relaxed">
-                To stand as the premier boutique digital studio recognized worldwide for marrying cutting-edge visual aesthetics with performant engineering models that push browser boundaries.
+                To empower businesses with innovative technology and reliable digital solutions that inspire growth, efficiency, and long-term success.
               </p>
             </motion.div>
           </div>
