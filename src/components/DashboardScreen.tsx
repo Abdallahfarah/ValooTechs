@@ -12,7 +12,7 @@ export default function DashboardScreen() {
               className="w-5.5 h-5.5 object-contain"
             />
           </div>
-          <span className="font-semibold text-lg tracking-wider text-[#F7F9FC]">VALO-RES</span>
+          <span className="font-semibold text-lg tracking-wider text-[#F7F9FC]">Dhadhan Hub</span>
         </div>
         <div className="flex items-center gap-4">
           <div className="h-8 px-4 rounded-full bg-white/5 border border-white/10 flex items-center text-xs text-white/60">
@@ -36,7 +36,7 @@ export default function DashboardScreen() {
             Simplified
           </h2>
           <p className="text-white/60 text-sm mb-6 max-w-xs">
-            All-in-one POS and management system tailored for modern enterprise restaurants.
+            Dhadhan Hub helps restaurants run smoothly with an all-in-one platform for POS, kitchen display, table management, staff, payments, and business reporting.
           </p>
           <button className="self-start px-5 py-2.5 bg-gradient-to-r from-primary to-primary-light border border-white/10 text-white rounded-lg text-xs font-semibold hover:opacity-90 transition-opacity flex items-center gap-2">
             <span>View Case Study</span>

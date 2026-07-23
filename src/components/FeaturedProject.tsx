@@ -68,7 +68,7 @@ export default function FeaturedProject() {
                 <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
                 <div className="w-3 h-3 rounded-full bg-green-500/80" />
                 <div className="h-5 px-3 bg-white/5 rounded-md flex items-center text-[10px] text-white/40 ml-4 w-64 select-none">
-                  valo-restaurant.smart/dashboard
+                  dhadhan-hub.smart/dashboard
                 </div>
               </div>
               
@@ -93,7 +93,7 @@ export default function FeaturedProject() {
 
             {/* Project Title */}
             <h3 className="text-3xl font-extrabold text-[#0A0E1A] tracking-tight mb-4">
-              VALO Restaurant Smart
+              Dhadhan Hub
             </h3>
 
             {/* Project Subtitle / Tags */}
@@ -113,7 +113,7 @@ export default function FeaturedProject() {
 
             {/* Description Paragraph */}
             <p className="text-sm text-primary/70 leading-relaxed mb-8">
-              An enterprise-grade smart restaurant management ecosystem. Integrating local point-of-sale terminals, kitchen display networks, staff dispatch systems, and real-time revenue analytics dashboards in a single cross-platform solution.
+              Dhadhan Hub helps restaurants run smoothly with an all-in-one platform for POS, kitchen display, table management, staff, payments, and business reporting.
             </p>
 
             {/* CTA Button (Primary Glass Button) */}
